@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pyschic Game</title>
+</head>
+
+ <strong>
+
+    <h1>Pyschic Game</h1>
+
+    </strong>
+
+     <br>
+
+    <body>
+
+<div class="col-lg-4">
+        <div class="card">
+          <h2 class="card-header">Guess a letter</h2>
+
+
+     <script type="text/javascript">
+
+
+  document.onkeypress = function(event) {
+    var userGuess = event.key;
+
+    var alphabet =["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+
+    if(userGuess === computerChoice){
+        wins++;
+    }else{(userGuess === notcomputerChoice)
+        guesses--;
+    }
+
+    if(guesses === 0){
+        losses++;
+    }
+    else(guesses === i++){
+        wins++;
+    }
+
+    document.getElementById('wins').innerHTML = "Wins: " + wins;
+    document.getElementById('losses').innerHTML = "losses: " + losses;
+    document.getElementById('guesses').innerHTML = "Guesses left: " + guesses;
+
+}  
+
